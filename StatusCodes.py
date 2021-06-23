@@ -1,8 +1,9 @@
 import random
-ReasonPhrase = ["Informational","Successful","OK","Created","No Content","Redirection","Moved Permanently","Found","Not Modified",
-                "Client Error","Bad Request","Unauthorized","Forbidden","Not Found","Server Error","Internal Server Error","Not Implemented",
-                "Service Unavailable"]
-ResponseCode = ["1xx","2xx",200,201,204,"3xx",301,302,304,"4xx",400,401,403,404,"5xx",500,501,503]
+ReasonPhrase = ["OK","Created","No Content","Moved Permanently","Found","Not Modified","Bad Request",
+                "Unauthorized","Forbidden","Not Found","proxy authentication required","multiple resource use conflict",
+                "Unsupported media type","Too many requests - rate limit reached","Internal Server Error","Not Implemented",
+                "bad gateway","Service Unavailable","gateway timeout"]
+ResponseCode = [200,201,204,301,302,304,400,401,403,404,407,409,415,429,500,501,502,503,504]
 wrongs = 0
 rights = 0
 for item in ReasonPhrase:
